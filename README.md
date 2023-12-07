@@ -24,9 +24,9 @@ General information about each user is captured in the `users` table:
 - `state` identifies where the user lives
 
 These tables are located in a cloud-hosted PostgreSQL database:
-- Host: `db.bit.io`
-- Port: `5432`
-- Database: `erik/analytics`
+- Host: `pg-285c4482-getclair-7a3a.a.aivencloud.com`
+- Port: `10594`
+- Database: `defaultdb`
 
 *Username and password credentials will be shared by email.*
 
