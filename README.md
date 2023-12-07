@@ -26,7 +26,7 @@ General information about each user is captured in the `users` table:
 These tables are located in a cloud-hosted PostgreSQL database:
 - Host: `pg-285c4482-getclair-7a3a.a.aivencloud.com`
 - Port: `10594`
-- Database: `defaultdb`
+- Database: `assessment`
 
 *Username and password credentials will be shared by email.*
 
