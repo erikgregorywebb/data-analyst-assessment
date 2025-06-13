@@ -1,27 +1,22 @@
 ### Background
 
-Clair reaches hourly workers by embedding financial services in the software they use to get paid and clock shifts. Clair’s flagship offering is an earned-wage advance product to grant workers early access to money they've already earned.
+Clair reaches hourly workers by embedding financial services in the software they use to get paid and clock shifts. Clair’s flagship offering is an earned-wage advance product that gives workers early access to money they've already earned.
 
-Workers sign up for Clair by tapping a “get paid early” button within thier payroll or time tracking app This opens an embedded onboarding experience in which a worker (1) creates an account, (2) switches their paycheck (direct deposit) to the account, and (3) takes their first wage advance. 
+Workers sign up for Clair by tapping a “get paid early” button within thier payroll or time tracking app This opens an embedded onboarding experience.
 
 ### Dataset
 
-Event tracking has been implemented for each onboarding step. Events are captured in the `events` table – each row represents a unique action taken by a user:
+Event tracking has been implemented for each onboarding step. Events are captured in the `onboarding_events` table – each row represents a unique action taken by a user:
 - `user_id` unique identifier for each user
-- `event_name` specifies the action taken by the user; possible events are ordered below:
-  - `start_onboarding` tracks when the user opens the onboarding experience for the first time
-  - `accepted_tos` tracks when the user accepts the terms of service
-  - `create_account` tracks when the user has successfully created an account by passing KYC (Know Your Customer)
-  - `attempted_direct_deposit_update` tracks when the user attempts to move their paycheck to Clair
-  - `updated_direct_deposit` tracks when the user successfully moves their paycheck to Clair
-  - `took_first_wage_advance` tracks when the user takes a wage advance for the first time
-- `event_timestamp` specifies when the event occurred
-
-General information about each user is captured in the `users` table:
-- `user_id` unique identifier for each user
-- `business_id` identifies the user's employer, meaning the business they work for
-- `partner_id` identifies the app where the worker clocks in and out 
-- `state` identifies where the user lives
+- `event_type` specifies the action taken by the user; possible events are ordered below:
+  - `started_onboading` tracks when the user opens the onboarding experience for the first time
+  - `accepted_terms_of_service` tracks when the user has agreed to Clair's terms of service and initiated the [KYC](https://en.wikipedia.org/wiki/Know_your_customer) (Know Your Customer) processs
+  - `passed_kyc` tracks when the user has successfully completed the KYC check
+  - `started_application` tracks when the user has started an application for an advance
+  - `submitted_application` tracks when the user has submitted an application for an advance
+  - `confirmed_advance` tracks when the user has fully agreed to the terms of the advance
+  - `opted_for_instant_transfer` tracks when the user opts to upgrade the disbursement speed of thier advance to instant for a fee
+- `event_at` specifies when the event occurred
 
 These tables are located in a cloud-hosted PostgreSQL database:
 - Host: `pg-285c4482-getclair-7a3a.a.aivencloud.com`
