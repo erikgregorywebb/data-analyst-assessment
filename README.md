@@ -1,8 +1,8 @@
 ### Background
 
-Clair is a digital banking platform that reaches hourly workers by embedding financial services in the software they use to clock-in and clock-out. Clair’s flagship offering is a free earned-wage advance product to grant workers early access to money they've already earned.
+Clair reaches hourly workers by embedding financial services in the software they use to get paid and clock shifts. Clair’s flagship offering is an earned-wage advance product to grant workers early access to money they've already earned.
 
-Workers sign up for Clair by tapping a “get paid early” button within the app they use to clock-in and clock-out. This opens an embedded onboarding experience in which a worker (1) creates a bank account, (2) switches their paycheck (direct deposit) to the account, and (3) takes their first wage advance. 
+Workers sign up for Clair by tapping a “get paid early” button within thier payroll or time tracking app This opens an embedded onboarding experience in which a worker (1) creates an account, (2) switches their paycheck (direct deposit) to the account, and (3) takes their first wage advance. 
 
 ### Dataset
 
