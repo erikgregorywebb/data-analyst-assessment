@@ -27,7 +27,7 @@ These tables are located in a cloud-hosted PostgreSQL database:
 
 ### Your Task
 
-Using the tools of your choice, analyze the data to identify where drop-off is occurring during onboarding. Identify pain points by calculating how long it takes users to move through each step. The Product team intends to prioritize the feature backlog based on your recommendations. There is no “right” answer; the emphasis is creativity and clearly communicating your approach and findings. For your own sake, please limit time spent on the assessment to 3 hours.
+Using the tools of your choice, analyze the data to identify where drop-off is occurring during the onboarding and advance flow. Identify pain points by calculating how long it takes users to move through each step. The Product team intends to prioritize the feature backlog based on your recommendations. There is no “right” answer; the emphasis is creativity and clearly communicating your approach and findings. For your own sake, please limit time spent on the assessment to 3 hours.
 
 ### Deliverables
 - 2-4 slides describing your approach, findings, and recommendations; include visuals to support your conclusions
